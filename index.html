@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>First Tee Golf Club and Resorts</title>
+    <body>
+        <header>
+            <h1>First Tee Golf Club and Resorts</h1><hr>
+        </header>
+        <nav>
+            <a href="#">Top of Page</a>
+            <a href="#about">About</a>
+            <a href="#packages">Public Course</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <main id="about">
+            <img src="images/golfcourse.jpg" alt="First Tee Golf Course" width="600" height="400">
+            <h2>Welcome to First Tee Golf Club and Resorts</h2>
+            <table id="packages">
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <th>Single Day Stay</th>
+                    <th>Book a one day visit at First Tee Golf Club and Resorts. With a one day stay, enjoy access to our premier golf courses and resort amenities.</th>
+                    <th>1 Day</th>
+                    <th>$150 Weekdays | $250 Weekends and Holidays</th>
+                </tr>
+                <tr>
+                    <th>Weekend Stay</th>
+                    <th>Experience the full luxury of First Tee Golf Club and Resorts with a multi day stay. Enjoy extended access to our golf courses, spa services, and fine dining options.</th>
+                    <th>2 Days</th>
+                    <th>$400</th>
+                </tr>
+                <tr>
+                    <th>Membership Packages</th>
+                    <th>Join our exclusive membership program for year-round access to First Tee Golf Club and Resorts. Members receive special discounts, priority booking, and invitations to exclusive events.</th>
+                    <th>1 Year</th> 
+                    <th>$3000</th>
+                </tr>
+            </table>
+            <form id="contact" action="mailto:info@firstteegolfclub.com" method="post" enctype="text/plain">
+                <h3>Schedule a Visit or Ask a Question</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="visit-type">Visit Type:</label>
+                <select name="visit-type" id="visit-type">
+                    <option value="public-course">Public Course</option>
+                    <option value="private-club">Private Club</option>
+                    <option value="resort-stay">Resort Stay</option>
+                </select>
+                <textarea id="comments" name="comments" placeholder="Additional Comments"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <hr>Contact us at <a href="mailto:info@firstteegolfclub.com">info@firstteegolfclub.com</a>
+        </footer>
+    </body>
+</html>
