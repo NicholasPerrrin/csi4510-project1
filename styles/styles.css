@@ -98,11 +98,10 @@ img {
     object-fit: cover;
 }
 
-table {
+main {
     width: 100%;
-    border: black 2px solid;
     margin-bottom: var(--spacing);
-    background: #fff;
+    text-align: center;
 }
 
 th, td {
@@ -120,7 +119,7 @@ tr:nth-child(even) {
     background: #f9f9f9;
 }
 
-main {
+table {
     margin-bottom: calc(var(--spacing) * 2);
     padding: var(--spacing);
     background: #fffbe7;
@@ -135,13 +134,20 @@ main {
     main {
         padding: var(--spacing);
     }
-    table, td, tr {
-        display: block;
+    table, tr {
+        display: table;
+        table-layout: fixed;
         width: 100%;
     }
     img {
         width: 100%;
         height: auto;
+    }
+    th, td {
+        width: auto;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 }
 
@@ -151,6 +157,7 @@ main {
     }
     table {
         font-size: 0.95em;
+        table-layout: fixed;
     }
 }
 
